@@ -69,7 +69,7 @@ const shade = {
 
 const elevation = {
   low: `${shade.lighter} 0.15rem 0.15rem 0.3rem, ${main.white} -0.1rem -0.1rem 0.25rem;`,
-  medium: `${shade.lighter} 0.3rem 0.3rem 0.6rem, ${main.white} -0.2rem -0.2rem 0.50rem`,
+  medium: `${shade.lighter} 0.3rem 0.3rem 0.6rem, ${main.white} -0.2rem -0.2rem 0.5rem`,
   high: `${shade.lighter} 0.6rem 0.6rem 1.2rem, ${main.white} -0.4rem -0.4rem 1rem`,
 };
 

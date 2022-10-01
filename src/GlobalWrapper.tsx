@@ -21,6 +21,7 @@ const StyledWrapper = styled.div`
   background-color: ${({ theme }: { theme: Theme }) => theme.shade.lightest};
   min-height: 200px;
   color: ${({ theme }: { theme: Theme }) => theme.palette.main.black};
+  padding: 8px;
 `;
 
 export default ({ children }: { children: any }) => (
