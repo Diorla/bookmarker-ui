@@ -1,18 +1,3 @@
-import React, { FC, HTMLAttributes } from 'react';
-import styled from 'styled-components';
-import Theme from './interfaces/Theme';
+import Button from './button';
 
-export interface Props extends HTMLAttributes<HTMLDivElement> {}
-
-const StyledDiv = styled.div`
-  color: ${({ theme }: { theme: Theme }) => theme.palette.main.black};
-  background-color: ${({ theme }: { theme: Theme }) => theme.shade.darkest};
-`;
-
-export const Thing: FC<Props> = ({ children }) => {
-  return (
-    <StyledDiv>
-      {children || `the snozzberries taste like snozzberries`}
-    </StyledDiv>
-  );
-};
+export { Button };
