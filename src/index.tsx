@@ -1,15 +1,18 @@
-import React, { FC, HTMLAttributes, ReactChild } from 'react';
+import React, { FC, HTMLAttributes } from 'react';
+import styled from 'styled-components';
+import Theme from './interfaces/Theme';
 
-export interface Props extends HTMLAttributes<HTMLDivElement> {
-  /** custom content, defaults to 'the snozzberries taste like snozzberries' */
-  children?: ReactChild;
-}
+export interface Props extends HTMLAttributes<HTMLDivElement> {}
 
-// Please do not use types off of a default export module or else Storybook Docs will suffer.
-// see: https://github.com/storybookjs/storybook/issues/9556
-/**
- * A custom Thing component. Neat!
- */
+const StyledDiv = styled.div`
+  color: ${({ theme }: { theme: Theme }) => theme.palette.main.black};
+  background-color: ${({ theme }: { theme: Theme }) => theme.shade.darkest};
+`;
+
 export const Thing: FC<Props> = ({ children }) => {
-  return <div>{children || `the snozzberries taste like snozzberries`}</div>;
+  return (
+    <StyledDiv>
+      {children || `the snozzberries taste like snozzberries`}
+    </StyledDiv>
+  );
 };
