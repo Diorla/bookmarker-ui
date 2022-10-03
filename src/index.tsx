@@ -1,5 +1,5 @@
 import Button from './button';
 import ThemeProvider from './ThemeProvider';
-import Theme from './interfaces/Theme';
+import ThemeProps from './interfaces/ThemeProps';
 
-export { Button, ThemeProvider, Theme };
+export { Button, ThemeProvider, ThemeProps };

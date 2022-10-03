@@ -1,6 +1,5 @@
 import React from 'react';
 import styled, { createGlobalStyle } from 'styled-components';
-import Theme from './interfaces/Theme';
 
 const GlobalStyle = createGlobalStyle`
   :root {
@@ -18,9 +17,9 @@ const GlobalStyle = createGlobalStyle`
 `;
 
 const StyledWrapper = styled.div`
-  background-color: ${({ theme }: { theme: Theme }) => theme.shade.lightest};
+  background-color: ${({ theme }) => theme.shade.lightest};
   min-height: 200px;
-  color: ${({ theme }: { theme: Theme }) => theme.palette.main.black};
+  color: ${({ theme }) => theme.palette.main.black};
   padding: 8px;
 `;
 
