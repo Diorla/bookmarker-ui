@@ -10,6 +10,8 @@
   - [Button](#button)
   - [Chip](#chip)
   - [Input](#input)
+  - [Link](#link)
+  - [Textarea](#textarea)
 - [Props](#props)
 
 # Introduction
@@ -147,9 +149,54 @@ export default function Component() {
 }
 ```
 
+## Link
+
+```tsx
+import { Link } from 'bookmarker-ui';
+
+export default function Component() {
+  return (
+    <div>
+      <Link>Default</Link>
+      <Link href="https://adeolaade.com/">Repo</Link>
+    </div>
+  );
+}
+```
+
+## Textarea
+
+```tsx
+import { Textarea } from 'bookmarker-ui';
+
+export default function Component() {
+  return (
+    <div>
+      <Textarea rows={4} value="Default" />
+      <Textarea disabled rows={4} value="Default" />
+      <Textarea placeholder="Write stuff here" rows={4} value="" />
+      <Textarea
+        errorText="Error just occurred"
+        placeholder="Write stuff here"
+        rows={4}
+        value=""
+      />
+      <Textarea
+        label="Email"
+        placeholder="example@email.com"
+        rows={4}
+        value=""
+      />
+    </div>
+  );
+}
+```
+
 # Props
 
 - ThemeProps
 - ButtonProps
 - ChipProps
 - InputProps
+- LinkProps
+- TextareaProps
