@@ -4,15 +4,18 @@ import ThemeProps from './interfaces/ThemeProps';
 import theme from './theme';
 import Chip, { ChipProps } from './chip';
 import Input, { InputProps } from './input';
+import Link, { LinkProps } from './link';
 
 export {
   Button,
   ThemeProvider,
-  ThemeProps,
-  theme,
   Chip,
-  ButtonProps,
-  ChipProps,
   Input,
+  Link,
+  theme,
+  ButtonProps,
+  ThemeProps,
+  ChipProps,
   InputProps,
+  LinkProps,
 };
