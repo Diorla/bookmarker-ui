@@ -33,5 +33,5 @@ jobs:
       - run: git config user.name "Diorla"
       # update static file
       - run: git add storybook-static
-      - run: git commit -m "`r format(Sys.time(), '%d %B, %Y')`"
+      - run: git commit -m "workflow commit"
       - run: git push origin main
