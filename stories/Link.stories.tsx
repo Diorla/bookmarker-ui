@@ -1,7 +1,6 @@
 import React from 'react';
 import { Meta, Story } from '@storybook/react';
-import LinkProps from '../src/Link/LinkProps';
-import { Link } from '../src';
+import { Link, LinkProps } from '../src';
 
 const meta: Meta = {
   title: 'Link',

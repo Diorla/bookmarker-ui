@@ -1,7 +1,6 @@
 import React from 'react';
 import { Meta, Story } from '@storybook/react';
-import ChipProps from '../src/Chip/ChipProps';
-import { Chip } from '../src';
+import { Chip, ChipProps } from '../src';
 
 const meta: Meta = {
   title: 'Chip',

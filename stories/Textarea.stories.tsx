@@ -1,11 +1,11 @@
 import React from 'react';
 import { Meta, Story } from '@storybook/react';
-import { Input, InputProps } from '../src';
+import { Textarea, TextareaProps } from '../src';
 import styled from 'styled-components';
 
 const meta: Meta = {
-  title: 'Input',
-  component: Input,
+  title: 'Textarea',
+  component: Textarea,
   argTypes: {
     value: {
       control: {
@@ -25,9 +25,9 @@ const Wrapper = styled.div`
   margin: auto;
 `;
 
-const Template: Story<InputProps> = args => (
+const Template: Story<TextareaProps> = args => (
   <Wrapper>
-    <Input {...args} />
+    <Textarea rows={4} {...args} />
   </Wrapper>
 );
 

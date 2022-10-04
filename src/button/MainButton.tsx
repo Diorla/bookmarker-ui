@@ -18,15 +18,11 @@ export default styled.button`
   }
   &:disabled {
     cursor: not-allowed;
-    box-shadow: inset 0.1rem 0.1rem 0.125rem
-        ${({ theme }) => theme.shade.lighter},
-      inset -0.1rem -0.1rem 0.125rem ${({ theme }) => theme.palette.main.white};
+    box-shadow: ${({ theme }) => theme.depth.shallow};
     opacity: 0.7;
   }
   &:disabled:hover {
-    box-shadow: inset 0.1rem 0.1rem 0.125rem
-        ${({ theme }) => theme.shade.lighter},
-      inset -0.1rem -0.1rem 0.125rem ${({ theme }) => theme.palette.main.white};
+    box-shadow: ${({ theme }) => theme.depth.shallow};
     color: ${({ theme }) => theme.palette.main.black};
   }
 `;
