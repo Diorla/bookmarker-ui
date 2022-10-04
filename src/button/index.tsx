@@ -4,6 +4,8 @@ import DefaultButton from './DefaultButton';
 import PrimaryButton from './PrimaryButton';
 import SecondaryButton from './SecondaryButton';
 
+export { ButtonProps };
+
 export default function Button({ children, variant, ...props }: ButtonProps) {
   if (variant === 'primary')
     return (
