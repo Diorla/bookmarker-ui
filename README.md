@@ -9,13 +9,12 @@
 - [Components](#components)
   - [Button](#button)
   - [Chip](#chip)
+  - [Input](#input)
 - [Props](#props)
-  - [ThemeProps](#themeprops)
-  - [ButtonProps](#buttonprops)
 
 # Introduction
 
-This is a basic react components using neumorphic styles. For visualisation, please check out storybook ![here](https://bookmarker-ui.vercel.app)
+This is a basic react components using neumorphic styles. For visualisation, please check out storybook [here](https://bookmarker-ui.vercel.app)
 
 # Getting started
 
@@ -126,8 +125,31 @@ export default function Component() {
 }
 ```
 
+## Input
+
+```tsx
+import { Input } from 'bookmarker-ui';
+
+export default function Component() {
+  return (
+    <div>
+      <Input value="Default" />
+      <Input disabled value="Default" />
+      <Input placeholder="Write stuff here" value="" />
+      <Input
+        errorText="Error text here"
+        placeholder="Write stuff here"
+        value=""
+      />
+      <Input label="Email" placeholder="example@email.com" value="" />
+    </div>
+  );
+}
+```
+
 # Props
 
-## ThemeProps
-
-## ButtonProps
+- ThemeProps
+- ButtonProps
+- ChipProps
+- InputProps

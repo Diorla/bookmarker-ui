@@ -3,6 +3,7 @@ import ThemeProvider from './ThemeProvider';
 import ThemeProps from './interfaces/ThemeProps';
 import theme from './theme';
 import Chip, { ChipProps } from './chip';
+import Input, { InputProps } from './input';
 
 export {
   Button,
@@ -12,4 +13,6 @@ export {
   Chip,
   ButtonProps,
   ChipProps,
+  Input,
+  InputProps,
 };
