@@ -1,5 +1,6 @@
 import React from 'react';
-import styled, { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from 'styled-components';
+import Container from './Container';
 
 const GlobalStyle = createGlobalStyle`
   :root {
@@ -14,18 +15,15 @@ const GlobalStyle = createGlobalStyle`
     -moz-osx-font-smoothing: grayscale;
     -webkit-text-size-adjust: 100%;
   }
-`;
-
-const StyledWrapper = styled.div`
-  background-color: ${({ theme }) => theme.shade.lightest};
-  min-height: 200px;
-  color: ${({ theme }) => theme.palette.main.black};
-  padding: 8px;
+  .sb-show-main.sb-main-padded {
+    margin: 0;
+    padding: 0;
+  }
 `;
 
 export default ({ children }: { children: any }) => (
-  <StyledWrapper>
+  <Container>
     <GlobalStyle />
     {children}
-  </StyledWrapper>
+  </Container>
 );

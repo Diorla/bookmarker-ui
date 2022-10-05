@@ -6,6 +6,7 @@ import Chip, { ChipProps } from './chip';
 import Input, { InputProps } from './input';
 import Link, { LinkProps } from './link';
 import Textarea, { TextareaProps } from './textarea';
+import Container from './Container';
 
 export {
   Button,
@@ -14,6 +15,7 @@ export {
   Input,
   Link,
   Textarea,
+  Container,
   theme,
   ButtonProps,
   ThemeProps,
