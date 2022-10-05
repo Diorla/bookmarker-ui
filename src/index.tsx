@@ -7,6 +7,7 @@ import Input, { InputProps } from './input';
 import Link, { LinkProps } from './link';
 import Textarea, { TextareaProps } from './textarea';
 import Container from './Container';
+import Loader from './Loader';
 
 export {
   Button,
@@ -16,6 +17,7 @@ export {
   Link,
   Textarea,
   Container,
+  Loader,
   theme,
   ButtonProps,
   ThemeProps,
