@@ -6,7 +6,7 @@ const meta: Meta = {
   title: 'Loader',
   component: Loader,
   argTypes: {
-    children: {
+    title: {
       control: {
         type: 'text',
       },
@@ -19,10 +19,4 @@ const meta: Meta = {
 
 export default meta;
 
-const Template: Story = args => <Loader {...args} />;
-
-export const Default = Template.bind({});
-
-Default.args = {
-  children: 'Default',
-};
+export const LoaderExample: Story = _args => <Loader />;

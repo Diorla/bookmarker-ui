@@ -9,10 +9,19 @@
 - [Components](#components)
   - [Button](#button)
   - [Chip](#chip)
+  - [Container](#container)
+  - [Header](#header)
+  - [Hide](#hide)
   - [Input](#input)
   - [Link](#link)
+  - [Loader](#loader)
   - [Textarea](#textarea)
 - [Props](#props)
+- [Hooks](#hooks)
+  - [useWindowSize](#usewindowsize)
+- [Scripts](#scripts)
+  - [darken](#darken)
+  - [contrastColor](#contrastcolor)
 
 # Introduction
 
@@ -127,6 +136,78 @@ export default function Component() {
 }
 ```
 
+## Container
+
+```tsx
+import { Container } from 'bookmarker-ui';
+
+export default function Component() {
+  return <Container>This is the body</Container>;
+}
+```
+
+## Header
+
+```tsx
+import { MenuItem, Hide, Input, Header } from 'bookmarker-ui';
+
+export default function Component() {
+  return (
+    <Header style={{ justifyContent: 'space-between' }}>
+      <MenuItem active>
+        <img
+          src="https://bookmarker-one.vercel.app/favicon.ico"
+          style={{ height: 24, width: 24 }}
+        />
+      </MenuItem>
+      <Hide smDown>
+        <Input
+          onChange={() => {}}
+          placeholder="filter"
+          type="search"
+          value=""
+        />
+      </Hide>
+      <div style={{ display: 'flex', flexDirection: 'row' }}>
+        <MenuItem active>Profile</MenuItem>
+        <MenuItem>Sign out</MenuItem>
+      </div>
+    </Header>
+  );
+}
+```
+
+## Hide
+
+```tsx
+import { Hide } from 'bookmarker-ui';
+
+export default function Component() {
+  const { width } = useWindowSize();
+
+  return (
+    <div
+      style={{
+        alignItems: 'center',
+        justifyContent: 'center',
+      }}
+    >
+      <div>size: {width}</div>
+      <Hide xsDown>xsDown: 320</Hide>
+      <Hide xsUp>xsUp: 320</Hide>
+      <Hide smDown>smDown: 640</Hide>
+      <Hide smUp>smUp: 640</Hide>
+      <Hide mdDown>mdDown: 960</Hide>
+      <Hide mdUp>mdUp: 960</Hide>
+      <Hide lgDown>lgDown: 1280</Hide>
+      <Hide lgUp>lgUp: 1280</Hide>
+      <Hide xlDown>xlDown: 1920</Hide>
+      <Hide xlUp>xlUp: 1920</Hide>
+    </div>
+  );
+}
+```
+
 ## Input
 
 ```tsx
@@ -161,6 +242,16 @@ export default function Component() {
       <Link href="https://adeolaade.com/">Repo</Link>
     </div>
   );
+}
+```
+
+## Loader
+
+```tsx
+import { Loader } from 'bookmarker-ui';
+
+export default function Component() {
+  return <Loader />;
 }
 ```
 
@@ -200,3 +291,47 @@ export default function Component() {
 - InputProps
 - LinkProps
 - TextareaProps
+- HideProps
+
+# Hooks
+
+## useWindowSize
+
+```ts
+import { useWindowSize } from 'bookmarker-ui';
+
+const Demo = () => {
+  const { height, width } = useWindowSize();
+  console.log(height, '==', width);
+  // 1000 == 400
+
+  return <div>This is it</div>;
+};
+```
+
+# Scripts
+
+## darken
+
+> same as lighten
+
+```ts
+// default is 0.2
+darken('#ade01a'); // #8AB315
+darken('#ade01a', 0.1); // #9CCA17
+darken('#ade01a', 0.3); // #799D12
+darken('#ade01a', 0.5); // #57700D
+darken('#ade01a', 0.7); // #344308
+darken('#ade01a', 0.9); // #111603
+darken('#ade01a', 1); // #000000
+```
+
+## contrastColor
+
+Returns white or black, depending on the colour provided. It will determine the best colour for contrast.
+
+```ts
+contrastColor('#fff'); //"#000000"
+contrastColor('#000'); //"#ffffff"
+contrastColor('#ade01a'); //"#000000"
+```

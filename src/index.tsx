@@ -8,6 +8,10 @@ import Link, { LinkProps } from './link';
 import Textarea, { TextareaProps } from './textarea';
 import Container from './Container';
 import Loader from './Loader';
+import { Header, MenuItem } from './header';
+import Hide, { HideProps } from './hide';
+import useWindowSize from './hooks/useWindowSize';
+import { darken, lighten } from './scripts/color-functions';
 
 export {
   Button,
@@ -18,6 +22,9 @@ export {
   Textarea,
   Container,
   Loader,
+  Header,
+  MenuItem,
+  Hide,
   theme,
   ButtonProps,
   ThemeProps,
@@ -25,4 +32,8 @@ export {
   InputProps,
   LinkProps,
   TextareaProps,
+  HideProps,
+  useWindowSize,
+  darken,
+  lighten,
 };

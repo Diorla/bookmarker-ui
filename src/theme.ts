@@ -1,4 +1,4 @@
-import { DefaultTheme } from 'styled-components';
+import ThemeProps from './interfaces/ThemeProps';
 import { darken, lighten } from './scripts/color-functions';
 
 const breakpoint = {
@@ -79,7 +79,7 @@ const depth = {
   deep: `${shade.lighter} 0.3rem 0.3rem 0.375rem inset, ${main.white} -0.3rem -0.3rem 0.375rem inset`,
 };
 
-export const theme: DefaultTheme = {
+export const theme: ThemeProps = {
   breakpoint,
   elevation,
   depth,
