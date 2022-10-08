@@ -1,6 +1,6 @@
 import React from 'react';
 import { Meta, Story } from '@storybook/react';
-import { Button, ButtonProps } from '../src';
+import { Button, ButtonProps, Container } from '../src';
 
 const meta: Meta = {
   title: 'Button',
@@ -19,7 +19,11 @@ const meta: Meta = {
 
 export default meta;
 
-const Template: Story<ButtonProps> = args => <Button {...args} />;
+const Template: Story<ButtonProps> = args => (
+  <Container style={{ alignItems: 'center', justifyContent: 'center' }}>
+    <Button {...args} />
+  </Container>
+);
 
 export const Default = Template.bind({});
 

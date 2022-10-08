@@ -1,7 +1,6 @@
 import React from 'react';
 import { Meta, Story } from '@storybook/react';
-import { Input, InputProps } from '../src';
-import styled from 'styled-components';
+import { Container, Input, InputProps } from '../src';
 
 const meta: Meta = {
   title: 'Input',
@@ -20,15 +19,10 @@ const meta: Meta = {
 
 export default meta;
 
-const Wrapper = styled.div`
-  width: clamp(240px, 80%, 480px);
-  margin: auto;
-`;
-
 const Template: Story<InputProps> = args => (
-  <Wrapper>
+  <Container style={{ alignItems: 'center', justifyContent: 'center' }}>
     <Input {...args} />
-  </Wrapper>
+  </Container>
 );
 
 export const Default = Template.bind({});

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Meta, Story } from '@storybook/react';
-import { Link, LinkProps } from '../src';
+import { Container, Link, LinkProps } from '../src';
 
 const meta: Meta = {
   title: 'Link',
@@ -19,7 +19,11 @@ const meta: Meta = {
 
 export default meta;
 
-const Template: Story<LinkProps> = args => <Link {...args} />;
+const Template: Story<LinkProps> = args => (
+  <Container style={{ alignItems: 'center', justifyContent: 'center' }}>
+    <Link {...args} />{' '}
+  </Container>
+);
 
 export const Default = Template.bind({});
 

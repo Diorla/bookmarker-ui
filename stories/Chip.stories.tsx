@@ -1,6 +1,6 @@
 import React from 'react';
 import { Meta, Story } from '@storybook/react';
-import { Chip, ChipProps } from '../src';
+import { Chip, ChipProps, Container } from '../src';
 
 const meta: Meta = {
   title: 'Chip',
@@ -19,7 +19,11 @@ const meta: Meta = {
 
 export default meta;
 
-const Template: Story<ChipProps> = args => <Chip {...args} />;
+const Template: Story<ChipProps> = args => (
+  <Container style={{ alignItems: 'center', justifyContent: 'center' }}>
+    <Chip {...args} />
+  </Container>
+);
 
 export const Default = Template.bind({});
 

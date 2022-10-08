@@ -1,7 +1,6 @@
 import React from 'react';
 import { Meta, Story } from '@storybook/react';
-import { Textarea, TextareaProps } from '../src';
-import styled from 'styled-components';
+import { Container, Textarea, TextareaProps } from '../src';
 
 const meta: Meta = {
   title: 'Textarea',
@@ -20,15 +19,10 @@ const meta: Meta = {
 
 export default meta;
 
-const Wrapper = styled.div`
-  width: clamp(240px, 80%, 480px);
-  margin: auto;
-`;
-
 const Template: Story<TextareaProps> = args => (
-  <Wrapper>
-    <Textarea rows={4} {...args} />
-  </Wrapper>
+  <Container style={{ alignItems: 'center', justifyContent: 'center' }}>
+    <Textarea rows={4} cols={30} {...args} />
+  </Container>
 );
 
 export const Default = Template.bind({});
@@ -63,6 +57,6 @@ export const WithLabel = Template.bind({});
 
 WithLabel.args = {
   value: '',
-  placeholder: 'example@email.com',
-  label: 'Email',
+  placeholder: 'Once upon a time',
+  label: 'Story',
 };
