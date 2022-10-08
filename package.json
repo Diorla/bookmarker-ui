@@ -72,6 +72,7 @@
   },
   "dependencies": {
     "color": "^4.2.3",
+    "rollup-plugin-image-files": "^1.4.2",
     "styled-components": "^5.3.6"
   }
 }
