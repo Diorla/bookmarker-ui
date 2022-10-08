@@ -3,7 +3,7 @@ const images = require('rollup-plugin-image-files');
 module.exports = {
   rollup(config, _options) {
     config.plugins = [
-      images({ incude: ['**/*.png', '**/*.jpg', '**/*.gif'] }),
+      images({ include: ['**/*.png', '**/*.jpg', '**/*.gif'] }),
       ...config.plugins,
     ];
 
