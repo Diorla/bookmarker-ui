@@ -1,6 +1,6 @@
 import React from 'react';
 import Container from './Container';
-import spinner from './assets/spinner.gif';
+import spinner from './assets/spinner';
 
 export default function Loader() {
   return (
