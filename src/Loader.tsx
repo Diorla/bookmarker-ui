@@ -4,7 +4,7 @@ import spinner from './assets/spinner';
 
 export default function Loader() {
   return (
-    <Container style={{ alignItems: 'center', justifyContent: 'center' }}>
+    <Container fullHeight alignCenter justifyCenter>
       <img src={spinner} />
     </Container>
   );

@@ -23,7 +23,7 @@ export default meta;
 export const Template: Story<HideProps> = _args => {
   const { width } = useWindowSize();
   return (
-    <Container style={{ alignItems: 'center', justifyContent: 'center' }}>
+    <Container fullHeight alignCenter justifyCenter>
       <div>size: {width}</div>
       <Hide xsDown>xsDown: {theme.breakpoint.xs}</Hide>
       <Hide xsUp>xsUp: {theme.breakpoint.xs}</Hide>

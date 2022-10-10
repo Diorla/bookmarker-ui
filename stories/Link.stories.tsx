@@ -20,7 +20,7 @@ const meta: Meta = {
 export default meta;
 
 const Template: Story<LinkProps> = args => (
-  <Container style={{ alignItems: 'center', justifyContent: 'center' }}>
+  <Container fullHeight alignCenter justifyCenter>
     <Link {...args} />{' '}
   </Container>
 );

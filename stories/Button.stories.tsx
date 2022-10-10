@@ -20,7 +20,7 @@ const meta: Meta = {
 export default meta;
 
 const Template: Story<ButtonProps> = args => (
-  <Container style={{ alignItems: 'center', justifyContent: 'center' }}>
+  <Container fullHeight alignCenter justifyCenter>
     <Button {...args} />
   </Container>
 );

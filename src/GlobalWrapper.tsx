@@ -22,7 +22,7 @@ const GlobalStyle = createGlobalStyle`
 `;
 
 export default ({ children }: { children: any }) => (
-  <Container>
+  <Container fullHeight>
     <GlobalStyle />
     {children}
   </Container>

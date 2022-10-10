@@ -20,7 +20,7 @@ const meta: Meta = {
 export default meta;
 
 const Template: Story<TextareaProps> = args => (
-  <Container style={{ alignItems: 'center', justifyContent: 'center' }}>
+  <Container fullHeight alignCenter justifyCenter>
     <Textarea rows={4} cols={30} {...args} />
   </Container>
 );
