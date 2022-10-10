@@ -28,7 +28,16 @@ Below are some of the things that I'm working on or plan to add.
 - Icons
 - Table
 - Typography
-- Card
+
+## [0.7.0] - 2022-10-10
+
+## Add
+
+- Card added
+
+### Changed
+
+- disabled in chips set to optional
 
 ## [0.6.2] - 2022-10-10
 

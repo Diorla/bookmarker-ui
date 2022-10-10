@@ -12,6 +12,7 @@ import { Header, MenuItem } from './header';
 import Hide, { HideProps } from './hide';
 import useWindowSize from './hooks/useWindowSize';
 import { darken, lighten } from './scripts/color-functions';
+import Card, { CardProps } from './card';
 
 export {
   Button,
@@ -25,6 +26,7 @@ export {
   Header,
   MenuItem,
   Hide,
+  Card,
   theme,
   ButtonProps,
   ThemeProps,
@@ -33,6 +35,7 @@ export {
   LinkProps,
   TextareaProps,
   HideProps,
+  CardProps,
   useWindowSize,
   darken,
   lighten,

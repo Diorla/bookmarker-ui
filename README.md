@@ -97,7 +97,7 @@ This is a basic button, for interaction or clicking
 ```tsx
 import { Button } from 'bookmarker-ui';
 
-export default function Component() {
+export default function Demo() {
   return (
     <div>
       <Button>Default</Button>
@@ -115,6 +115,26 @@ export default function Component() {
 }
 ```
 
+```tsx
+import { Card } from 'bookmarker-ui';
+
+export default function Demo() {
+  return (
+    <div>
+      <Card depth={1}>
+        <div style={{ padding: 8 }}>Low</div>
+      </Card>
+      <Card depth={2}>
+        <div style={{ padding: 8 }}>Medium</div>
+      </Card>
+      <Card depth={3}>
+        <div style={{ padding: 8 }}>Deep</div>
+      </Card>
+    </div>
+  );
+}
+```
+
 ## Chip
 
 Used to indicate labels or tags
@@ -122,7 +142,7 @@ Used to indicate labels or tags
 ```tsx
 import { Chip } from 'bookmarker-ui';
 
-export default function Component() {
+export default function Demo() {
   return (
     <div>
       <Chip title="Default" />
@@ -143,7 +163,7 @@ export default function Component() {
 ```tsx
 import { Container } from 'bookmarker-ui';
 
-export default function Component() {
+export default function Demo() {
   return <Container>This is the body</Container>;
 }
 ```
@@ -153,7 +173,7 @@ export default function Component() {
 ```tsx
 import { MenuItem, Hide, Input, Header } from 'bookmarker-ui';
 
-export default function Component() {
+export default function Demo() {
   return (
     <Header style={{ justifyContent: 'space-between' }}>
       <MenuItem active>
@@ -184,7 +204,7 @@ export default function Component() {
 ```tsx
 import { Hide } from 'bookmarker-ui';
 
-export default function Component() {
+export default function Demo() {
   const { width } = useWindowSize();
 
   return (
@@ -215,7 +235,7 @@ export default function Component() {
 ```tsx
 import { Input } from 'bookmarker-ui';
 
-export default function Component() {
+export default function Demo() {
   return (
     <div>
       <Input value="Default" />
@@ -237,7 +257,7 @@ export default function Component() {
 ```tsx
 import { Link } from 'bookmarker-ui';
 
-export default function Component() {
+export default function Demo() {
   return (
     <div>
       <Link>Default</Link>
@@ -252,7 +272,7 @@ export default function Component() {
 ```tsx
 import { Loader } from 'bookmarker-ui';
 
-export default function Component() {
+export default function Demo() {
   return <Loader />;
 }
 ```
@@ -262,7 +282,7 @@ export default function Component() {
 ```tsx
 import { Textarea } from 'bookmarker-ui';
 
-export default function Component() {
+export default function Demo() {
   return (
     <div>
       <Textarea rows={4} value="Default" />
