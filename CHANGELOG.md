@@ -13,6 +13,29 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+Below are some of the things that I'm working on or plan to add.
+
+### Add
+
+- Switch
+- Radio button
+- Tabs
+- Checkbox
+- Select
+- Rating
+- Avatar
+- Divider
+- Icons
+- Table
+- Typography
+- Card
+
+## [0.6.2] - 2022-10-10
+
+### Changed
+
+- make loader's height dynamic with `fullHeight` props
+
 ## [0.6.1] - 2022-10-10
 
 ### Changed
