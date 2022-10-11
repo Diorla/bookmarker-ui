@@ -13,6 +13,7 @@ import Hide, { HideProps } from './hide';
 import useWindowSize from './hooks/useWindowSize';
 import { darken, lighten } from './scripts/color-functions';
 import Card, { CardProps } from './card';
+import Typography, { TypographyProps } from './typography';
 
 export {
   Button,
@@ -27,6 +28,7 @@ export {
   MenuItem,
   Hide,
   Card,
+  Typography,
   theme,
   ButtonProps,
   ThemeProps,
@@ -36,6 +38,7 @@ export {
   TextareaProps,
   HideProps,
   CardProps,
+  TypographyProps,
   useWindowSize,
   darken,
   lighten,

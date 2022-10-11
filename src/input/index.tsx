@@ -1,6 +1,6 @@
 import React from 'react';
 import { useId } from 'react';
-import ErrorWrapper from '../ErrorWrapper';
+import InputError from '../InputError';
 import InputProps from './InputProps';
 import Label from './Label';
 import StyledInput from './StyledInput';
@@ -14,7 +14,7 @@ export default function Input({ label, errorText, ...props }: InputProps) {
     <Wrapper style={props.style}>
       {label && <Label htmlFor={id}>{label}</Label>}
       <StyledInput {...props} id={id} ref={null} style={{}} />
-      {errorText && <ErrorWrapper>{errorText}</ErrorWrapper>}
+      {errorText && <InputError>{errorText}</InputError>}
     </Wrapper>
   );
 }

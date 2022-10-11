@@ -2,13 +2,18 @@ import React from 'react';
 import * as ReactDOM from 'react-dom';
 import {
   Button,
+  Card,
   Chip,
   Container,
+  Header,
+  Hide,
   Input,
   Link,
   Loader,
+  MenuItem,
   Textarea,
   ThemeProvider,
+  Typography,
 } from '../src';
 
 describe('Thing', () => {
@@ -17,11 +22,17 @@ describe('Thing', () => {
     ReactDOM.render(
       <ThemeProvider>
         <Container>
-          <Button />
-          <Chip title="" disabled={false} />
+          <Button>Click me</Button>
+          <Card>Hello world</Card>
+          <Chip title="" />
+          <Header>
+            <MenuItem>Hello world</MenuItem>
+          </Header>
+          <Hide xlUp>Hide me</Hide>
           <Input />
           <Link />
           <Textarea />
+          <Typography>Hello text</Typography>
           <Loader />
         </Container>
       </ThemeProvider>,

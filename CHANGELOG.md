@@ -27,6 +27,26 @@ Below are some of the things that I'm working on or plan to add.
 - Divider
 - Icons
 - Table
+- Image: figure, img and figcaption
+- Divider
+- Transition: Fade, Slide (up, down, left and right), Zoom
+- Modal
+- Rating
+- Select
+- Slider
+- Icons
+- Icon button
+- List
+- Table
+- Notify
+- Skeleton
+- Breadcrumbs
+- Drawer
+
+## [0.8.0] - 2022-10-11
+
+## Add
+
 - Typography
 
 ## [0.7.0] - 2022-10-10

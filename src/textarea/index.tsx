@@ -4,7 +4,7 @@ import Label from './Label';
 import StyledTextarea from './StyledTextarea';
 import Wrapper from './Wrapper';
 import React from 'react';
-import ErrorWrapper from '../ErrorWrapper';
+import InputError from '../InputError';
 
 export { TextareaProps };
 export default function Textarea({
@@ -17,7 +17,7 @@ export default function Textarea({
     <Wrapper style={props.style}>
       {label && <Label htmlFor={id}>{label}</Label>}
       <StyledTextarea {...props} id={id} ref={null} />
-      {errorText && <ErrorWrapper>{errorText}</ErrorWrapper>}
+      {errorText && <InputError>{errorText}</InputError>}
     </Wrapper>
   );
 }
