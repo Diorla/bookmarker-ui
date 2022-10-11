@@ -12,7 +12,7 @@ import { Header, MenuItem } from './header';
 import Hide, { HideProps } from './hide';
 import useWindowSize from './hooks/useWindowSize';
 import { darken, lighten } from './scripts/color-functions';
-import Card, { CardProps } from './card';
+import Board, { BoardProps } from './board';
 import Typography, { TypographyProps } from './typography';
 
 export {
@@ -27,7 +27,7 @@ export {
   Header,
   MenuItem,
   Hide,
-  Card,
+  Board,
   Typography,
   theme,
   ButtonProps,
@@ -37,7 +37,7 @@ export {
   LinkProps,
   TextareaProps,
   HideProps,
-  CardProps,
+  BoardProps,
   TypographyProps,
   useWindowSize,
   darken,

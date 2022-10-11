@@ -43,15 +43,19 @@ Below are some of the things that I'm working on or plan to add.
 - Breadcrumbs
 - Drawer
 
-## [0.8.0] - 2022-10-11
+## [1.0.0] - 2022-10-11
 
-## Add
+### Add
 
 - Typography
 
+### Changed
+
+- Card changed to Board
+
 ## [0.7.0] - 2022-10-10
 
-## Add
+### Add
 
 - Card added
 

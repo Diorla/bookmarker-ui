@@ -2,7 +2,7 @@ import React from 'react';
 import * as ReactDOM from 'react-dom';
 import {
   Button,
-  Card,
+  Board,
   Chip,
   Container,
   Header,
@@ -23,7 +23,7 @@ describe('Thing', () => {
       <ThemeProvider>
         <Container>
           <Button>Click me</Button>
-          <Card>Hello world</Card>
+          <Board>Hello world</Board>
           <Chip title="" />
           <Header>
             <MenuItem>Hello world</MenuItem>

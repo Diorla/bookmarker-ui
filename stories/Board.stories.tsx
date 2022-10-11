@@ -1,10 +1,10 @@
 import React from 'react';
 import { Meta, Story } from '@storybook/react';
-import { Card, CardProps, Container } from '../src';
+import { Board, BoardProps, Container } from '../src';
 
 const meta: Meta = {
-  title: 'Card',
-  component: Card,
+  title: 'Board',
+  component: Board,
   argTypes: {
     children: {
       control: {
@@ -19,11 +19,11 @@ const meta: Meta = {
 
 export default meta;
 
-const Template: Story<CardProps> = args => (
+const Template: Story<BoardProps> = args => (
   <Container fullHeight alignCenter justifyCenter>
-    <Card {...args}>
+    <Board {...args}>
       <div style={{ padding: 8 }}>{args.children}</div>
-    </Card>
+    </Board>
   </Container>
 );
 

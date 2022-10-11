@@ -9,6 +9,7 @@ Bookmarker UI is a React component library that implements Neumorphic Design, wh
   - [Provider](#provider)
   - [Theme](#theme)
 - [Components](#components)
+  - [Board](#board)
   - [Button](#button)
   - [Chip](#chip)
   - [Container](#container)
@@ -90,6 +91,28 @@ See [ThemeProps](#themeprops) for full details about the props
 
 # Components
 
+## Board
+
+```tsx
+import { Board } from 'bookmarker-ui';
+
+export default function Demo() {
+  return (
+    <div>
+      <Board depth={1}>
+        <div style={{ padding: 8 }}>Low</div>
+      </Board>
+      <Board depth={2}>
+        <div style={{ padding: 8 }}>Medium</div>
+      </Board>
+      <Board depth={3}>
+        <div style={{ padding: 8 }}>Deep</div>
+      </Board>
+    </div>
+  );
+}
+```
+
 ## Button
 
 This is a basic button, for interaction or clicking
@@ -110,26 +133,6 @@ export default function Demo() {
       <Button disabled variant="secondary">
         Secondary
       </Button>
-    </div>
-  );
-}
-```
-
-```tsx
-import { Card } from 'bookmarker-ui';
-
-export default function Demo() {
-  return (
-    <div>
-      <Card depth={1}>
-        <div style={{ padding: 8 }}>Low</div>
-      </Card>
-      <Card depth={2}>
-        <div style={{ padding: 8 }}>Medium</div>
-      </Card>
-      <Card depth={3}>
-        <div style={{ padding: 8 }}>Deep</div>
-      </Card>
     </div>
   );
 }
@@ -308,12 +311,14 @@ export default function Demo() {
 # Props
 
 - ThemeProps
+- BoardProps
 - ButtonProps
 - ChipProps
+- HeaderProps
+- HideProps
 - InputProps
 - LinkProps
 - TextareaProps
-- HideProps
 
 # Hooks
 
