@@ -1,6 +1,6 @@
 import React from 'react';
 import { createGlobalStyle } from 'styled-components';
-import Container from './Container';
+import Container from './components/container';
 
 const GlobalStyle = createGlobalStyle`
   :root {

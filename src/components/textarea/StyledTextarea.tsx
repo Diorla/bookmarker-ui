@@ -1,8 +1,8 @@
 import styled from 'styled-components';
-import { darken } from '../scripts/color-functions';
+import { darken } from '../../scripts/color-functions';
 
-export default styled.input`
-  padding: 0.4rem 0.6rem;
+export default styled.textarea`
+  padding: 0.6rem 0.8rem;
   border: none;
   border-radius: 1rem;
   font-size: 1.2rem;
@@ -10,6 +10,7 @@ export default styled.input`
   background: none;
   font-family: inherit;
   color: ${({ theme }) => theme.palette.main.black};
+  resize: vertical;
   &::-moz-placeholder {
     color: ${({ theme }) => theme.shade.dark};
   }

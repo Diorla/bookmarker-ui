@@ -1,6 +1,6 @@
 import React from 'react';
 import { useId } from 'react';
-import InputError from '../InputError';
+import InputError from '../../InputError';
 import InputProps from './InputProps';
 import Label from './Label';
 import StyledInput from './StyledInput';

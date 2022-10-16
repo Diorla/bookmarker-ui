@@ -1,5 +1,6 @@
-import ThemeProps from './interfaces/ThemeProps';
-import { darken, lighten } from './scripts/color-functions';
+import ThemeProps from './ThemeProps';
+import { darken, lighten } from '../scripts/color-functions';
+import ThemeProvider from './ThemeProvider';
 
 const breakpoint = {
   xs: 320,
@@ -96,4 +97,5 @@ export const theme: ThemeProps = {
   },
 };
 
+export { ThemeProps, ThemeProvider };
 export default theme;

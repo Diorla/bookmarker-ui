@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import useWindowSize from '../hooks/useWindowSize';
-import theme from '../theme';
+import useWindowSize from '../../hooks/useWindowSize';
+import theme from '../../theme';
 import HideProps from './HideProps';
 
 const StyledWrapper = styled.div<{ hide: boolean }>`

@@ -4,7 +4,7 @@ import Label from './Label';
 import StyledTextarea from './StyledTextarea';
 import Wrapper from './Wrapper';
 import React from 'react';
-import InputError from '../InputError';
+import InputError from '../../InputError';
 
 export { TextareaProps };
 export default function Textarea({
