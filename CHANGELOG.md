@@ -43,11 +43,12 @@ Below are some of the things that I'm working on or plan to add.
 - Breadcrumbs
 - Drawer
 
-## [1.0.0] - 2022-10-11
+## [0.8.0] - 2022-10-11
 
 ### Add
 
 - Typography
+- Select added
 
 ### Changed
 

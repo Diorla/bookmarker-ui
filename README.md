@@ -18,10 +18,12 @@ Bookmarker UI is a React component library that implements Neumorphic Design, wh
   - [Input](#input)
   - [Link](#link)
   - [Loader](#loader)
+  - [Select](#select)
   - [Textarea](#textarea)
 - [Props](#props)
 - [Hooks](#hooks)
   - [useWindowSize](#usewindowsize)
+  - [useClickAway](#useclickaway)
 - [Scripts](#scripts)
   - [darken](#darken)
   - [contrastColor](#contrastcolor)
@@ -280,6 +282,27 @@ export default function Demo() {
 }
 ```
 
+## Select
+
+```tsx
+export default function Demo() {
+
+  const [value, setValue] = useState('');
+  const list = ['One', 'Two', 'Three', 'Four', 'Five'];
+
+  return <Select title={value || 'Select a number'}>
+    {list.map(item => (
+      <SelectItem
+        onClick={() => setValue(item)}
+        active={value === item}
+        key={item}
+      >
+        {item}
+      </SelectItem>
+    ))}
+  </Select>
+}
+```
 ## Textarea
 
 ```tsx
@@ -334,6 +357,25 @@ const Demo = () => {
 
   return <div>This is it</div>;
 };
+```
+
+## useClickAway
+```tsx
+import {useClickAway} from 'react-use';
+
+const Demo = () => {
+  const ref = useRef(null);
+
+  useClickAway(ref, () => {
+    console.log('Outside clicked');
+  });
+
+  return (
+    <div ref={ref}>Hello there</div>
+  );
+};
+
+
 ```
 
 # Scripts

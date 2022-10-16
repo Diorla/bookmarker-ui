@@ -1,4 +1,6 @@
 import { useState, useEffect } from 'react';
+import attachEvent from '../scripts/attachEvent';
+import detachEvent from '../scripts/detachEvent';
 
 const useWindowSize = (initialWidth = Infinity, initialHeight = Infinity) => {
   const isBrowser = typeof window !== 'undefined';
@@ -16,11 +18,10 @@ const useWindowSize = (initialWidth = Infinity, initialHeight = Infinity) => {
           height: window.innerHeight,
         });
       };
-
-      window.addEventListener('resize', handler);
+      attachEvent(window, 'resize', handler);
 
       return () => {
-        window.removeEventListener('resize', handler);
+        detachEvent(window, 'resize', handler);
       };
     }
   }, []);

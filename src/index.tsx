@@ -14,6 +14,8 @@ import useWindowSize from './hooks/useWindowSize';
 import { darken, lighten } from './scripts/color-functions';
 import Board, { BoardProps } from './board';
 import Typography, { TypographyProps } from './typography';
+import Select, { SelectItem } from './select';
+import useClickAway from './hooks/useClickAway';
 
 export {
   Button,
@@ -29,6 +31,8 @@ export {
   Hide,
   Board,
   Typography,
+  Select,
+  SelectItem,
   theme,
   ButtonProps,
   ThemeProps,
@@ -40,6 +44,7 @@ export {
   BoardProps,
   TypographyProps,
   useWindowSize,
+  useClickAway,
   darken,
   lighten,
 };
