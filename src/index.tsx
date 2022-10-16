@@ -7,7 +7,7 @@ import Input, { InputProps } from './input';
 import Link, { LinkProps } from './link';
 import Textarea, { TextareaProps } from './textarea';
 import Container from './Container';
-import Loader from './Loader';
+import Loader from './loader';
 import { Header, MenuItem } from './header';
 import Hide, { HideProps } from './hide';
 import useWindowSize from './hooks/useWindowSize';

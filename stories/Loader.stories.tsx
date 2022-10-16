@@ -19,4 +19,4 @@ const meta: Meta = {
 
 export default meta;
 
-export const LoaderExample: Story = _args => <Loader />;
+export const LoaderExample: Story = _args => <Loader fullHeight />;

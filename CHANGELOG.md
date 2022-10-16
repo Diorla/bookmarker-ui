@@ -52,6 +52,7 @@ Below are some of the things that I'm working on or plan to add.
 ### Changed
 
 - Card changed to Board
+- Loader changed
 
 ## [0.7.0] - 2022-10-10
 
