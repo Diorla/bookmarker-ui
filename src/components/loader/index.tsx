@@ -4,7 +4,7 @@ import React from 'react';
 import GlobalStyle from './GlobalStyle';
 import Icon from './Icon';
 import Body from './Body';
-import Heart from './Heart';
+import { Heart } from '../../icons';
 
 export { LoaderProps };
 export default function Loader({ fullHeight, style }: LoaderProps) {

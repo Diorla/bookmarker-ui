@@ -43,14 +43,28 @@ Below are some of the things that I'm working on or plan to add.
 - Breadcrumbs
 - Drawer
 
-## [1.0.1] - 2022-10-17
+## [1.0.2] - 2022-10-17
+
+### Added
+
+- Checkbox
+- Radio
+
 ### Changed
+
+- icon extracted from react-icons
+- Change elevated box-shadow to white
+
+## [1.0.1] - 2022-10-17
+
+### Changed
+
 - Paths updated
 - Make use of svg in loader
 
 ## Fixed
-- U-turn on the paths
 
+- U-turn on the paths
 
 ## [0.8.0] - 2022-10-11
 

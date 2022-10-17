@@ -1,5 +1,6 @@
 import Board, { BoardProps } from './board';
 import Button, { ButtonProps } from './button';
+import Checkbox, { CheckboxProps } from './checkbox';
 import Chip, { ChipProps } from './chip';
 import Container, { ContainerProps } from './container';
 import { Header, MenuItem } from './header';
@@ -7,6 +8,7 @@ import Hide, { HideProps } from './hide';
 import Input, { InputProps } from './input';
 import Link, { LinkProps } from './link';
 import Loader, { LoaderProps } from './loader';
+import Radio, { RadioProps } from './radio';
 import Select, { SelectItem, SelectProps } from './select';
 import Textarea, { TextareaProps } from './textarea';
 import Typography, { TypographyProps } from './typography';
@@ -16,6 +18,8 @@ export {
   BoardProps,
   Button,
   ButtonProps,
+  Checkbox,
+  CheckboxProps,
   Chip,
   ChipProps,
   Container,
@@ -30,6 +34,8 @@ export {
   Loader,
   LoaderProps,
   MenuItem,
+  Radio,
+  RadioProps,
   Select,
   SelectItem,
   SelectProps,

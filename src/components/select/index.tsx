@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react';
-import { MdArrowDropDown, MdArrowDropUp } from 'react-icons/md';
-import useClickAway from '../../hooks/useClickAway';
+import { useClickAway } from '../../hooks';
+import { UpArrow, DownArrow } from '../../icons';
 import Header from './Header';
 import Icon from './Icon';
 import List from './List';
@@ -22,7 +22,7 @@ export default function Select({ title, children, ...props }: SelectProps) {
       <Header onClick={() => setExpanded(!expanded)}>
         <span>{title}</span>
         <Icon expanded={expanded}>
-          {expanded ? <MdArrowDropUp /> : <MdArrowDropDown />}
+          {expanded ? <UpArrow /> : <DownArrow />}
         </Icon>
       </Header>
       <List expanded={expanded}>{children}</List>

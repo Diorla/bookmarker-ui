@@ -11,6 +11,7 @@ Bookmarker UI is a React component library that implements Neumorphic Design, wh
 - [Components](#components)
   - [Board](#board)
   - [Button](#button)
+  - [Checkbox](#checkbox)
   - [Chip](#chip)
   - [Container](#container)
   - [Header](#header)
@@ -18,6 +19,7 @@ Bookmarker UI is a React component library that implements Neumorphic Design, wh
   - [Input](#input)
   - [Link](#link)
   - [Loader](#loader)
+  - [Radio](#radio)
   - [Select](#select)
   - [Textarea](#textarea)
 - [Props](#props)
@@ -135,6 +137,23 @@ export default function Demo() {
       <Button disabled variant="secondary">
         Secondary
       </Button>
+    </div>
+  );
+}
+```
+
+## Checkbox
+
+This is a basic button, for interaction or clicking
+
+```tsx
+export default function Demo() {
+  return (
+    <div>
+      <Checkbox label="Default" />
+      <Checkbox checked label="Primary" variant="primary" />
+      <Checkbox checked label="Secondary" variant="secondary" />
+      <Checkbox disabled label="Disabled" />
     </div>
   );
 }
@@ -282,27 +301,51 @@ export default function Demo() {
 }
 ```
 
+## Radio
+
+This is a basic button, for interaction or clicking
+
+```tsx
+export default function Demo() {
+  return (
+    <div>
+      <Radio
+        wrapperStyle={{
+          marginBottom: 8,
+        }}
+        label="Default"
+      />
+      <Radio checked label="Primary" variant="primary" />
+      <Radio checked label="Secondary" variant="secondary" />
+      <Radio disabled label="Disabled" />
+    </div>
+  );
+}
+```
+
 ## Select
 
 ```tsx
 export default function Demo() {
-
   const [value, setValue] = useState('');
   const list = ['One', 'Two', 'Three', 'Four', 'Five'];
 
-  return <Select title={value || 'Select a number'}>
-    {list.map(item => (
-      <SelectItem
-        onClick={() => setValue(item)}
-        active={value === item}
-        key={item}
-      >
-        {item}
-      </SelectItem>
-    ))}
-  </Select>
+  return (
+    <Select title={value || 'Select a number'}>
+      {list.map(item => (
+        <SelectItem
+          onClick={() => setValue(item)}
+          active={value === item}
+          key={item}
+        >
+          {item}
+        </SelectItem>
+      ))}
+    </Select>
+  );
 }
 ```
+
 ## Textarea
 
 ```tsx
@@ -360,8 +403,9 @@ const Demo = () => {
 ```
 
 ## useClickAway
+
 ```tsx
-import {useClickAway} from 'react-use';
+import { useClickAway } from 'bookmarker-ui';
 
 const Demo = () => {
   const ref = useRef(null);
@@ -370,12 +414,8 @@ const Demo = () => {
     console.log('Outside clicked');
   });
 
-  return (
-    <div ref={ref}>Hello there</div>
-  );
+  return <div ref={ref}>Hello there</div>;
 };
-
-
 ```
 
 # Scripts
