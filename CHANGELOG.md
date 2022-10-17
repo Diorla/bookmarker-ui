@@ -43,9 +43,13 @@ Below are some of the things that I'm working on or plan to add.
 - Breadcrumbs
 - Drawer
 
-## [1.0.0] - 2022-10-11
+## [1.0.1] - 2022-10-17
 ### Changed
 - Paths updated
+- Make use of svg in loader
+
+## Fixed
+- U-turn on the paths
 
 
 ## [0.8.0] - 2022-10-11

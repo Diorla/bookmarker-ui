@@ -21,19 +21,19 @@ import {
   TextareaProps,
   Typography,
   TypographyProps,
-} from '@components';
+} from './components';
 
-import { useClickAway, useWindowSize } from '@hooks';
+import { useWindowSize, useClickAway } from './hooks';
 
 import {
-  attachEvent,
-  contrastColor,
   darken,
-  detachEvent,
   lighten,
-} from '@scripts';
+  contrastColor,
+  attachEvent,
+  detachEvent,
+} from './scripts';
 
-import theme, { ThemeProps, ThemeProvider } from '@theme';
+import theme, { ThemeProps, ThemeProvider } from './theme';
 
 export {
   Button,
