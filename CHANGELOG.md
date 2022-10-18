@@ -43,6 +43,12 @@ Below are some of the things that I'm working on or plan to add.
 - Breadcrumbs
 - Drawer
 
+## [1.1.1@alpha] - 2022-10-17
+
+### Added
+
+- Fix stroke width
+
 ## [1.1.0] - 2022-10-17
 
 ### Added

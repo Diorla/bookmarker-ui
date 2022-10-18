@@ -6,10 +6,10 @@ export default styled.ul<{ expanded: boolean }>`
   display: ${({ expanded }) => (expanded ? 'initial' : 'none')};
   margin: 0;
   flex: 1;
-  width: 100%;
   list-style: none;
   margin: 0;
   margin-top: 42px;
   padding: 0;
   box-shadow: ${({ theme }) => theme.elevation.low};
+  z-index: ${({ theme }) => theme.stack.modal};
 `;
