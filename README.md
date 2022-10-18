@@ -9,11 +9,13 @@ Bookmarker UI is a React component library that implements Neumorphic Design, wh
   - [Provider](#provider)
   - [Theme](#theme)
 - [Components](#components)
+  - [Avatar](#avatar)
   - [Board](#board)
   - [Button](#button)
   - [Checkbox](#checkbox)
   - [Chip](#chip)
   - [Container](#container)
+  - [Figure](#figure)
   - [Header](#header)
   - [Hide](#hide)
   - [Input](#input)
@@ -94,6 +96,34 @@ export default function index() {
 See [ThemeProps](#themeprops) for full details about the props
 
 # Components
+
+## Avatar
+
+```tsx
+import { Avatar } from 'bookmarker-ui';
+
+export default function Demo() {
+  return (
+    <div>
+      <Avatar src="https://picsum.photos/200/300" />
+      <Avatar
+        shape="rounded"
+        src="https://picsum.photos/200/300"
+        style={{
+          height: 200,
+        }}
+      />
+      <Avatar
+        shape="circle"
+        src="https://picsum.photos/200/300"
+        style={{
+          height: 200,
+        }}
+      />
+    </div>
+  );
+}
+```
 
 ## Board
 
@@ -189,6 +219,30 @@ import { Container } from 'bookmarker-ui';
 
 export default function Demo() {
   return <Container>This is the body</Container>;
+}
+```
+
+## Figure
+
+```tsx
+import { Avatar, Figure, FigCaption } from 'bookmarker-ui';
+
+export default function Demo() {
+  return (
+    <div>
+      <Figure caption="Hello Image" src="https://picsum.photos/200/300" />
+      <Figure
+        caption="Hello Image"
+        src="https://picsum.photos/200/300"
+        shape="rounded"
+      />
+      <Figure
+        caption="Hello Image"
+        src="https://picsum.photos/200/300"
+        shape="circle"
+      />
+    </div>
+  );
 }
 ```
 

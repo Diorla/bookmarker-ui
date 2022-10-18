@@ -1,4 +1,6 @@
 import {
+  Avatar,
+  AvatarProps,
   Board,
   BoardProps,
   Button,
@@ -8,6 +10,8 @@ import {
   Chip,
   ChipProps,
   Container,
+  Figure,
+  FigureProps,
   Header,
   Hide,
   HideProps,
@@ -76,4 +80,8 @@ export {
   CheckboxProps,
   Radio,
   RadioProps,
+  Avatar,
+  AvatarProps,
+  Figure,
+  FigureProps,
 };

@@ -1,3 +1,6 @@
+import { FigureProps } from './figure/index';
+import Avatar, { AvatarProps } from './avatar';
+import Figure from './figure';
 import Board, { BoardProps } from './board';
 import Button, { ButtonProps } from './button';
 import Checkbox, { CheckboxProps } from './checkbox';
@@ -14,6 +17,8 @@ import Textarea, { TextareaProps } from './textarea';
 import Typography, { TypographyProps } from './typography';
 
 export {
+  Avatar,
+  AvatarProps,
   Board,
   BoardProps,
   Button,
@@ -24,6 +29,8 @@ export {
   ChipProps,
   Container,
   ContainerProps,
+  Figure,
+  FigureProps,
   Header,
   Hide,
   HideProps,

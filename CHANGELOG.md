@@ -43,6 +43,17 @@ Below are some of the things that I'm working on or plan to add.
 - Breadcrumbs
 - Drawer
 
+## [1.1.0] - 2022-10-17
+
+### Added
+
+- Figure created
+- Avatar created
+
+### Changed
+
+- close select upon click
+
 ## [1.0.2] - 2022-10-17
 
 ### Added

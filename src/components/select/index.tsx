@@ -25,7 +25,9 @@ export default function Select({ title, children, ...props }: SelectProps) {
           {expanded ? <UpArrow /> : <DownArrow />}
         </Icon>
       </Header>
-      <List expanded={expanded}>{children}</List>
+      <List expanded={expanded} onClick={() => setExpanded(!expanded)}>
+        {children}
+      </List>
     </Wrapper>
   );
 }
