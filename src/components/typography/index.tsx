@@ -66,5 +66,9 @@ export default function Typography({
         {children}
       </Subtitle>
     );
-  return <Text variant={variant}>{children}</Text>;
+  return (
+    <Text variant={variant} {...props}>
+      {children}
+    </Text>
+  );
 }
