@@ -43,6 +43,16 @@ Below are some of the things that I'm working on or plan to add.
 - Breadcrumbs
 - Drawer
 
+## [1.1.2@alpha] - 2022-10-17
+
+### Changed
+
+- Resize headings
+
+### Fixed
+
+- Add props to text variant of Typography
+
 ## [1.1.1@alpha] - 2022-10-17
 
 ### Added
