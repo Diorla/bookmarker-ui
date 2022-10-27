@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { darken } from '../../scripts/color-functions';
 
 export default styled.textarea`
   padding: 0.6rem 0.8rem;
@@ -27,6 +26,6 @@ export default styled.textarea`
   }
   &:disabled {
     cursor: not-allowed;
-    color: ${({ theme }) => darken(theme.shade.darkest, 0.4)};
+    color: ${({ theme }) => theme.shade.darkest};
   }
 `;

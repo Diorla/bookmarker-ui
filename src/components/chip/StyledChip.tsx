@@ -14,7 +14,7 @@ export default styled.button`
   font-size: 1rem;
   padding: 0.25rem 0.5rem;
   &:disabled {
-    color: ${({ theme }) => theme.shade.darkest};
+    color: ${({ theme }) => theme.shade.darker};
     cursor: default;
   }
 `;

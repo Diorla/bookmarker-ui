@@ -1,7 +1,8 @@
 import Check from './Check';
 import Dot from './Dot';
-import DownArrow from './DownArrow';
+import CaretDown from './CaretDown';
 import Heart from './Heart';
-import UpArrow from './UpArrow';
+import CaretUp from './CaretUp';
+import ArrowUp from './ArrowUp';
 
-export { DownArrow, UpArrow, Heart, Check, Dot };
+export { CaretDown, CaretUp, Heart, Check, Dot, ArrowUp };

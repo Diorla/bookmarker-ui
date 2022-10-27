@@ -64,8 +64,8 @@ const shade = {
   lighter: '#c8d0e7', // greyLight2
   light: '#bec8e4', // greyLight3
   dark: '#9baacf', // greyDark
-  darker: '#94a3c7', //
-  darkest: '#8694b5', //
+  darker: '#8694b5', //
+  darkest: '#485575', //
 };
 
 const elevation = {

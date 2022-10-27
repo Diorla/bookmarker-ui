@@ -20,14 +20,12 @@ Below are some of the things that I'm working on or plan to add.
 - Switch
 - Radio button
 - Tabs
-- Checkbox
 - Select
 - Rating
 - Avatar
 - Divider
 - Icons
 - Table
-- Image: figure, img and figcaption
 - Divider
 - Transition: Fade, Slide (up, down, left and right), Zoom
 - Modal
@@ -45,9 +43,17 @@ Below are some of the things that I'm working on or plan to add.
 
 ## [1.1.2@alpha] - 2022-10-17
 
+### Added
+
+- Footer component
+- Up arrow added
+
 ### Changed
 
 - Resize headings
+- Add smooth scrolling
+- Update color scheme (shades)
+- Caret icon updated
 
 ### Fixed
 

@@ -1,6 +1,6 @@
 import React, { SVGProps } from 'react';
 
-export default function DownArrow(props: SVGProps<SVGSVGElement>) {
+export default function CaretUp(props: SVGProps<SVGSVGElement>) {
   return (
     <svg
       stroke="currentColor"
@@ -13,7 +13,7 @@ export default function DownArrow(props: SVGProps<SVGSVGElement>) {
       {...props}
     >
       <path fill="none" d="M0 0h24v24H0z"></path>
-      <path d="M7 10l5 5 5-5z"></path>
+      <path d="M7 14l5-5 5 5z"></path>
     </svg>
   );
 }

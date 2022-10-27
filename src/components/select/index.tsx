@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react';
 import { useClickAway } from '../../hooks';
-import { UpArrow, DownArrow } from '../../icons';
+import { CaretDown, CaretUp } from '../../icons';
 import Header from './Header';
 import Icon from './Icon';
 import List from './List';
@@ -22,7 +22,7 @@ export default function Select({ title, children, ...props }: SelectProps) {
       <Header onClick={() => setExpanded(!expanded)}>
         <span>{title}</span>
         <Icon expanded={expanded}>
-          {expanded ? <UpArrow /> : <DownArrow />}
+          {expanded ? <CaretUp /> : <CaretDown />}
         </Icon>
       </Header>
       <List expanded={expanded} onClick={() => setExpanded(!expanded)}>

@@ -15,6 +15,8 @@ import Radio, { RadioProps } from './radio';
 import Select, { SelectItem, SelectProps } from './select';
 import Textarea, { TextareaProps } from './textarea';
 import Typography, { TypographyProps } from './typography';
+import Footer from './footer';
+import FooterSegment from './footer/FooterSegment';
 
 export {
   Avatar,
@@ -31,6 +33,8 @@ export {
   ContainerProps,
   Figure,
   FigureProps,
+  Footer,
+  FooterSegment,
   Header,
   Hide,
   HideProps,

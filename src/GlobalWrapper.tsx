@@ -14,6 +14,7 @@ const GlobalStyle = createGlobalStyle`
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     -webkit-text-size-adjust: 100%;
+    scroll-behavior: smooth;
   }
   .sb-show-main.sb-main-padded {
     margin: 0;
